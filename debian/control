@@ -1,8 +1,7 @@
 Source: appstream
 Section: admin
 Priority: optional
-Maintainer: Matthias Klumpp <matthias@tenstral.net>
-DM-Upload-Allowed: yes
+Maintainer: Matthias Klumpp <mak@debian.org>
 Build-Depends: cmake (>= 2.8),
                debhelper (>= 9.0.0),
                intltool,
@@ -14,7 +13,7 @@ Build-Depends: cmake (>= 2.8),
                libxml2-dev (>= 2.8.0),
                valac (>= 0.16),
                xmlto
-Standards-Version: 3.9.3
+Standards-Version: 3.9.4
 Homepage: http://distributions.freedesktop.org/wiki/AppStream
 Vcs-Git: git://anonscm.debian.org/pkg-packagekit/appstream.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-packagekit/appstream.git
@@ -38,6 +37,7 @@ Description: Generator for application index
 
 Package: libappstream0
 Architecture: any
+Section: libs
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
