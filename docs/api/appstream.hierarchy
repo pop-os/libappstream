@@ -1,0 +1,19 @@
+GObject
+  AsBuilder
+  AsCategory
+  AsComponent
+  AsDataProvider
+    AsProviderAppstreamXML
+    AsProviderDEP11
+  AsDatabase
+  AsDistroDetails
+  AsImage
+  AsMenuParser
+  AsMetadata
+  AsRelease
+  AsScreenshot
+  AsSearchQuery
+GInterface
+  GTypePlugin
+GEnum
+  AsComponentKind

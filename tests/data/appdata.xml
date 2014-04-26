@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<applications version="0.1">
-  <application>
-    <id type="desktop">firefox.desktop</id>
+<components version="0.1">
+  <component type="desktop">
+    <id>firefox.desktop</id>
     <pkgname>firefox-bin</pkgname>
     <name>Firefox</name>
     <name lang="en_GB">Firefoux</name>
@@ -14,10 +14,10 @@
       <keyword lang="fr_FR">navigateur</keyword>
     </keywords>
     <icon type="stock">web-browser</icon>
-    <appcategories>
-      <appcategory>network</appcategory>
-      <appcategory>web</appcategory>
-    </appcategories>
+    <categories>
+      <category>network</category>
+      <category>web</category>
+    </categories>
     <mimetypes>
       <mimetype>text/html</mimetype>
       <mimetype>text/xml</mimetype>
@@ -29,6 +29,6 @@
       <mimetype>x-scheme-handler/https</mimetype>
     </mimetypes>
     <url type="homepage">http://www.mozilla.com</url>
-  </application>
+  </component>
   <!-- more applications here! -->
-</applications>
+</components>

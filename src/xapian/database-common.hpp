@@ -1,6 +1,6 @@
 /* database-common.hpp -- Common specs for AppStream Xapian database
  *
- * Copyright (C) 2012-2013 Matthias Klumpp <matthias@tenstral.net>
+ * Copyright (C) 2012-2014 Matthias Klumpp <matthias@tenstral.net>
  *
  * Licensed under the GNU Lesser General Public License Version 3
  *
@@ -21,28 +21,42 @@
 #ifndef DATABASE_COMMON_H
 #define DATABASE_COMMON_H
 
-namespace AppStream {
+namespace Appstream {
 
 // values used in the database
 namespace XapianValues {
 
 enum XapianValues {
-	APPNAME = 170,
-	APPNAME_UNTRANSLATED = 171,
-	DESKTOP_FILE = 172,
-	PKGNAME = 173,
-	ICON = 174,
-	ICON_URL = 175,
-	SUMMARY = 176,
-	DESCRIPTION = 177,
-	SCREENSHOTS = 178,	// screenshot definitions, as XML
-	CATEGORIES = 179,
-	LICENSE = 180,
-	URL_HOMEPAGE = 181,
+	TYPE = 140,
+	IDENTIFIER = 141,
+	CPTNAME = 142,
+	CPTNAME_UNTRANSLATED = 143,
+	PKGNAME = 144,
 
-	GETTEXT_DOMAIN = 190,
-	ARCHIVE_SECTION = 191,
-	ARCHIVE_CHANNEL = 192
+	SUMMARY = 145,
+	DESCRIPTION = 146,
+	CATEGORIES = 147,
+
+	ICON = 148,
+	ICON_URL = 149,
+
+	PROVIDED_ITEMS = 150,
+	SCREENSHOT_DATA = 151, // screenshot definitions, as XML
+	RELEASES_DATA = 152, // releases definitions, as XML
+
+	LICENSE = 153,
+	URL_HOMEPAGE = 154,
+	URL_BUGTRACKER = 155,
+	URL_FAQ = 156,
+	URL_DONATION = 157,
+
+	PROJECT_GROUP = 160,
+
+	COMPULSORY_FOR = 170,
+
+	GETTEXT_DOMAIN = 180,
+	ARCHIVE_SECTION = 181,
+	ARCHIVE_CHANNEL = 182
 };
 
 };
