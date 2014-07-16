@@ -1,3 +1,12 @@
+appstream (0.7.0-1) unstable; urgency=medium
+
+  * New upstream release: 0.7.0
+  * Update project homepage url
+  * Enable docs and qt library
+  * asqt_installpaths.patch: Install Qt library to multiarch paths
+
+ -- Matthias Klumpp <mak@debian.org>  Wed, 16 Jul 2014 16:24:48 +0200
+
 appstream (0.6.2-1) unstable; urgency=medium
 
   * New upstream bugfix release: 0.6.2
