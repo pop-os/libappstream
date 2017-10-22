@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 10.4),
                meson (>= 0.42),
                qtbase5-dev (>= 5.6),
                valac
-Standards-Version: 4.1.0
+Standards-Version: 4.1.1
 Homepage: http://www.freedesktop.org/wiki/Distributions/AppStream/
 Vcs-Git: https://anonscm.debian.org/git/pkg-packagekit/appstream.git
 Vcs-Browser: https://anonscm.debian.org/git/pkg-packagekit/appstream.git
@@ -27,6 +27,7 @@ Breaks: appstream-index (<< ${source:Version}),
         gnome-software (<< 3.22.5-1),
         plasma-discover (<< 5.8.5-3)
 Provides: appstream-index
+Suggests: curl
 Description: Software component metadata management
  AppStream is a metadata specification, allowing to write metadata for
  software projects in a standardized format.
