@@ -5,6 +5,7 @@ Maintainer: Matthias Klumpp <mak@debian.org>
 Build-Depends: debhelper (>= 11),
                gettext,
                gobject-introspection,
+               gperf,
                gtk-doc-tools,
                libgirepository1.0-dev (>= 1.53),
                libglib2.0-dev (>= 2.46),
@@ -14,7 +15,7 @@ Build-Depends: debhelper (>= 11),
                meson (>= 0.42),
                qtbase5-dev (>= 5.6),
                valac
-Standards-Version: 4.1.2
+Standards-Version: 4.1.4
 Homepage: http://www.freedesktop.org/wiki/Distributions/AppStream/
 Vcs-Git: https://salsa.debian.org/pkgutopia-team/appstream.git
 Vcs-Browser: https://salsa.debian.org/pkgutopia-team/appstream
