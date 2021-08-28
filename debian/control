@@ -34,10 +34,6 @@ Architecture: any
 Depends: shared-mime-info,
          ${misc:Depends},
          ${shlibs:Depends}
-Breaks: appstream-index (<< ${source:Version}),
-        gnome-software (<< 3.22.5-1),
-        plasma-discover (<< 5.8.5-3)
-Provides: appstream-index
 Suggests: apt-config-icons
 Description: Software component metadata management
  AppStream is a metadata specification which permits software components to
@@ -54,6 +50,22 @@ Description: Software component metadata management
  The 'appstreamcli' tool can be used for accessing the software component
  pool as well as for working with AppStream metadata directly, including
  validating it for compliance with the specification.
+
+Package: appstream-compose
+Architecture: any
+Depends: appstream,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Compose metadata collections from directory trees
+ AppStream is a metadata specification which permits software components to
+ provide information about themselves to automated systems and end-users
+ before the software is actually installed.
+ This permits informative displays of new applications to users in software
+ centers, as well as allowing a system to make decisions on which new software
+ a user might want to install (e.g. missing firmware or media handlers).
+ .
+ This package extends the `appstreamcli` utility with a `compose` subcommand
+ to generate AppStream metadata and media files from directory trees.
 
 Package: libappstream4
 Architecture: any
@@ -99,8 +111,6 @@ Section: introspection
 Depends: libappstream4 (= ${binary:Version}),
          ${gir:Depends},
          ${misc:Depends}
-Breaks: gir1.2-appstream (<< 0.10.1)
-Replaces: gir1.2-appstream (<< 0.10.1)
 Description: Library to access AppStream services (introspection data)
  AppStream is a metadata specification which permits software components to
  provide information about themselves to automated systems and end-users
@@ -209,7 +219,6 @@ Section: doc
 Depends: libjs-highlight.js,
          ${misc:Depends}
 Suggests: appstream
-Breaks: appstream (<< 0.11.8)
 Description: Developer documentation for AppStream
  AppStream is a metadata specification which permits software components to
  provide information about themselves to automated systems and end-users
