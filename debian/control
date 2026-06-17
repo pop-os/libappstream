@@ -16,7 +16,7 @@ Build-Depends: debhelper-compat (= 13),
                libglib2.0-dev (>= 2.62),
                libjs-highlight.js,
                libpango1.0-dev,
-               librsvg2-dev (>= 2.48) [amd64 arm64 armel armhf i386 mips64el mipsel ppc64el s390x powerpc ppc64 riscv64 sparc64 x32],
+               librsvg2-dev (>= 2.48) [amd64 arm64 armel armhf mips64el mipsel ppc64el s390x powerpc ppc64 riscv64 sparc64 x32],
                libstemmer-dev,
                libxml2-dev,
                libxmlb-dev (>= 0.3.6),
@@ -32,7 +32,7 @@ Vcs-Git: https://salsa.debian.org/pkgutopia-team/appstream.git
 Vcs-Browser: https://salsa.debian.org/pkgutopia-team/appstream
 
 Package: appstream
-Architecture: any
+Architecture: amd64 arm64
 Depends: shared-mime-info,
          ${misc:Depends},
          ${shlibs:Depends}
@@ -54,7 +54,7 @@ Description: Software component metadata management
  validating it for compliance with the specification.
 
 Package: appstream-compose
-Architecture: amd64 arm64 armel armhf i386 mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64 x32
+Architecture: amd64 arm64 armel armhf mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64 x32
 Depends: appstream,
          ${misc:Depends},
          ${shlibs:Depends}
@@ -74,7 +74,7 @@ Description: Compose metadata collections from directory trees
  to generate AppStream metadata and media files from directory trees.
 
 Package: libappstream4
-Architecture: any
+Architecture: amd64 arm64
 Section: libs
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -94,7 +94,7 @@ Description: Library to access AppStream services
  metadata.
 
 Package: libappstream-dev
-Architecture: any
+Architecture: amd64 arm64
 Section: libdevel
 Multi-Arch: same
 Depends: gir1.2-appstream-1.0 (= ${binary:Version}),
@@ -113,7 +113,7 @@ Description: Library to access AppStream services (development files)
  software management tools which use the AppStream library.
 
 Package: gir1.2-appstream-1.0
-Architecture: any
+Architecture: amd64 arm64
 Section: introspection
 Multi-Arch: same
 Depends: libappstream4 (= ${binary:Version}),
@@ -130,7 +130,7 @@ Description: Library to access AppStream services (introspection data)
  This package contains introspection data for the AppStream library.
 
 Package: libappstreamqt2
-Architecture: any
+Architecture: amd64 arm64
 Section: libs
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -148,7 +148,7 @@ Description: Qt5 library to access AppStream services
  services, like the software component metadata pool.
 
 Package: libappstreamqt-dev
-Architecture: any
+Architecture: amd64 arm64
 Multi-Arch: same
 Section: libdevel
 Depends: libappstreamqt2 (= ${binary:Version}),
@@ -166,7 +166,7 @@ Description: Qt5 library to access AppStream services (development files)
  software management tools which use the Qt-based AppStream library.
 
 Package: libappstream-compose0
-Architecture: amd64 arm64 armel armhf i386 mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64 x32
+Architecture: amd64 arm64 armel armhf mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64 x32
 Section: libs
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
@@ -185,7 +185,7 @@ Description: Building blocks to compose AppStream metadata
  icons, etc.).
 
 Package: libappstream-compose-dev
-Architecture: amd64 arm64 armel armhf i386 mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64 x32
+Architecture: amd64 arm64 armel armhf mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64 x32
 Section: libdevel
 Multi-Arch: same
 Depends: gir1.2-appstreamcompose-1.0 (= ${binary:Version}),
@@ -206,7 +206,7 @@ Description: Building blocks to compose AppStream metadata (development files)
  using the AppStream compose library.
 
 Package: gir1.2-appstreamcompose-1.0
-Architecture: amd64 arm64 armel armhf i386 mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64 x32
+Architecture: amd64 arm64 armel armhf mips64el mipsel powerpc ppc64 ppc64el riscv64 s390x sparc64 x32
 Section: introspection
 Multi-Arch: same
 Depends: libappstream-compose0 (= ${binary:Version}),
