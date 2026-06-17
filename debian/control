@@ -21,6 +21,7 @@ Build-Depends: debhelper-compat (= 13),
                libxml2-dev,
                libxmlb-dev (>= 0.3.6),
                libyaml-dev,
+               libzstd-dev,
                meson (>= 0.56),
                qtbase5-dev,
                valac
