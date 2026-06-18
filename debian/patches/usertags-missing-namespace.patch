@@ -23,6 +23,15 @@ Index: appstream/src/as-component.c
  		if (!as_component_has_category (cpt, split[i]))
  			return FALSE;
  	}
+@@ -4200,7 +4200,7 @@ as_component_load_from_xml (AsComponent
+ 				if (sn->type != XML_ELEMENT_NODE)
+ 					continue;
+ 				ns = as_xml_get_prop_value (sn, "namespace");
+-				if (sn == NULL)
++				if (ns == NULL)
+ 					continue;
+ 				value = as_xml_get_node_value (sn);
+ 				as_component_add_tag (cpt, ns, value);
 @@ -4649,7 +4649,9 @@ as_component_to_xml_node (AsComponent *c
  		for (guint i = 0; i < priv->tags->len; i++) {
  			xmlNode *tag_node = NULL;
